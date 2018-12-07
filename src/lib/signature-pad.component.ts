@@ -22,7 +22,7 @@ export class SignaturePadComponent implements OnInit, AfterViewInit {
 
     @Input() showDoneButton = true;
     @Input() doneButtonText = 'Done';
-    @Input() doneButtonClass = 'btn btn-primary';
+    @Input() doneButtonClass = 'btn btn-color-1';
     @Input() showClearButton = true;
     @Input() clearButtonText = 'Clear';
     @Input() clearButtonClass = 'btn btn-default';
@@ -59,6 +59,9 @@ export class SignaturePadComponent implements OnInit, AfterViewInit {
             penColor: this.penColor,
             backgroundColor: this.backgroundColor
         });
+
+        // console.log('Signature Pad:', this.signaturePad);
+
         this.signaturePad.penColor = this.penColor;
 
         if (this.editable) {
