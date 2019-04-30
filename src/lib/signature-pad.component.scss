@@ -1,11 +1,18 @@
 .signature-pad {
 
+    display: flex;
+    flex-direction:column;
+
     canvas {
         background: #f2f2f2;
     }
 
     .btn {
         margin-right: .25em;
+    }
+
+    .buttons{
+        margin-top: 10px;
     }
 
 }
