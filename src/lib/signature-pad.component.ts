@@ -9,7 +9,7 @@ import * as SignaturePad from 'signature_pad/dist/signature_pad';
 export class SignaturePadComponent implements OnInit, AfterViewInit {
 
     private signaturePad: SignaturePad;
-    @ViewChild('canvas', {read: ElementRef}) canvasRef: ElementRef;
+    @ViewChild('canvas', {read: ElementRef, static: true}) canvasRef: ElementRef;
 
     @Input() points: any[] = [];
     @Output() pointsChange = new EventEmitter<any>();
